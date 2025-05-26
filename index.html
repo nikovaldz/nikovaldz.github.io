@@ -16,8 +16,8 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Ares Valdiviezo</h1>
-						<p><span style="white-space: nowrap;">Writer / Filmmaker</span><br />
-						I create work that explores longing, obsession, and the blurry line between beauty and darkness.</p>
+						<p>Writer / Filmmaker</p>
+						<p>I create work that explores longing, obsession, and the blurry line between beauty and darkness.</p>
 						<ul class="actions desktop-only">
 							<li><a href="about.html" class="button icon solid fa-user">About Me</a></li>
 							<li><a href="projects.html" class="button icon solid fa-folder">Projects</a></li>
@@ -37,7 +37,7 @@
 					</header>
 
 				<!-- Nav -->
-					<nav id="nav">
+					<nav id="nav" class="mobile-only">
 						<ul class="links">
 							<li><a href="about.html">About Me</a></li>
 							<li><a href="projects.html">Projects</a></li>
@@ -69,6 +69,14 @@
 			<style>
 				@media screen and (max-width: 736px) {
 					.actions.desktop-only {
+						display: none;
+					}
+					#nav.mobile-only {
+						display: block;
+					}
+				}
+				@media screen and (min-width: 737px) {
+					#nav.mobile-only {
 						display: none;
 					}
 				}
